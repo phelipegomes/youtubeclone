@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const api = axios.create({
-    baseURL: 'http://localhost:3000/tools',
-});
+export default function Api() {
 
-export default api;
+    const Api = axios.create({
+        baseURL: 'https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyCHFVBlhOdyhuN-gioJh8oMOJcHnmhGGTo&part=snippet,contentDetails,statistics,status',
+        }
+    );
+}
